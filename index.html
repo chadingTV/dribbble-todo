@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="TODO LIST" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="apple-touch-icon" href="./img/touch-icon.png" />
+<link rel="apple-touch-startup-image" href="./img/apple-launch-1242x2688.png" />
+<!-- iPhone Xs Max (1242px x 2688px) -->
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="./img/apple-launch-1242x2688.png" />
+<!-- iPhone X, Xs (1125px x 2436px) -->
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="./img/apple-launch-1125x2436.png" />
+<link rel="manifest" href="manifest.json?v1.0.0.1"/>
+<title>Dribbble Todo</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+<link rel="stylesheet" href="./style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"></script>
+<script type="text/javascript" src="./script.js?v1.0.1.1"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="container">
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="background"></div>
+        <header>
+            <div class="left">
+                <i class="fas fa-bars" id="btn-menu"></i>
+            </div>
+            <div class="title">
+                TODO
+            </div>
+            <div class="right">
+                <i class="fas fa-search"></i>
+            </div>
+        </header>
+        <header class="detail">
+            <div class="left btn-close">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="right">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="my-image"></div>
+            <h2>Hello, Jane.</h2>
+            <p>Looks like feel good.</p>
+            <p>You have 3 tasks to do today.</p>
+            <p class="today">TODAY : SEPTEMBER 12, 2017</p>
+        </div>
+        <div class="card-area">
+            <div class="card">
+                <div class="inner">
+                    <div class="card-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="btn-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom">
+                        <p>9 Tasks</p>
+                        <h2>Personal</h2>
+                        <div class="status">
+                            <div class="track">
+                                <div class="bar" style="width:83%"></div>
+                            </div>
+                            <span class="per">83</span>
+                        </div>
+                        <div class="list">
+                            <p>Today</p>
+                            <ul>
+                                <li>Meet Clients<a></a></li>
+                                <li>Design Sprint<a></a></li>
+                                <li>Icon Set Design for Mobile App<a></a></li>
+                            </ul>
+                            <p>Tomorrow</p>
+                            <ul>
+                                <li>Weekly Report<a></a></li>
+                                <li>Design Meeting<a></a></li>
+                                <li>Design Meeting<a></a></li>
+                                <li>Design Meeting<a></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="btn-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom">
+                        <p>12 Tasks</p>
+                        <h2>Work</h2>
+                        <div class="status">
+                            <div class="track">
+                                <div class="bar" style="width:24%"></div>
+                            </div>
+                            <span class="per">24</span>
+                        </div>
+                        <div class="list">
+                            <p>Today</p>
+                            <ul>
+                                <li>Meet Clients<a></a></li>
+                                <li>Design Sprint<a></a></li>
+                                <li>Icon Set Design for Mobile App<a></a></li>
+                            </ul>
+                            <p>Tomorrow</p>
+                            <ul>
+                                <li>Weekly Report<a></a></li>
+                                <li>Design Meeting<a></a></li>
+                                <li>Design Meeting<a></a></li>
+                                <li>Design Meeting<a></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner">
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="btn-setting">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="bottom">
+                        <p>5 Tasks</p>
+                        <h2>Home</h2>
+                        <div class="status">
+                            <div class="track">
+                                <div class="bar" style="width:20%"></div>
+                            </div>
+                            <span class="per">20</span>
+                        </div>
+                        <div class="list">
+                            <p>Today</p>
+                            <ul>
+                                <li>Meet Clients<a></a></li>
+                                <li>Design Sprint<a></a></li>
+                                <li>Icon Set Design for Mobile App<a></a></li>
+                            </ul>
+                            <p>Tomorrow</p>
+                            <ul>
+                                <li>Weekly Report<a></a></li>
+                                <li>Design Meeting<a></a></li>
+                                <li>Design Meeting<a></a></li>
+                                <li>Design Meeting<a></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="new-task-page">
+        <header>
+            <div class="left btn-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="title">
+                New Task
+            </div>
+            <div></div>
+        </header>
+        <div class="contents">
+            <p>What tasks are you planning to perform?</p>
+            <div class="list">
+                <p>
+                    <i class="fas fa-briefcase"></i>
+                    Work
+                </p>
+                <p>
+                    <i class="fas fa-calendar-day"></i>
+                    Today
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="new-task-input-area">
+        <input type="text" id="input_new_task" name="" value="" />
+    </div>
+    <div class="btn-floating-plus">
+        <span></span>
+    </div>
+    <div class="side-menu">
+        <div class="inner">
+            <p>
+                <i class="fab fa-dribbble"></i>
+                <br/>
+                <a href="https://dribbble.com/shots/3812962-iPhone-X-Todo-Concept" target="_blank">
+                    Original Sample <i class="fas fa-external-link-alt"></i>
+                </a>
+            </p>
+            <p>Phone X - Todo Concept<br/>by <a href="https://dribbble.com/johnjbrown" target="_blank">Jae-seong, Jeong</a> in UI & Interaction Design</p>
+            <p>
+                <i class="fab fa-github"></i>
+                <br/>
+                <a href="https://github.com/chadingTV/dribbble-todo" target="_blank">
+                    Source code <i class="fas fa-external-link-alt"></i>
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="phone-layout-topbar">
+        <span class="left">11:42 AM</span>
+        <span class="right">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-three-quarters"></i>
+        </span>
+    </div>
+</div>
+<div class="link-area">
+    <span class="left">
+        <a href="https://dribbble.com/shots/3812962-iPhone-X-Todo-Concept" target="_blank">
+            <i class="fab fa-dribbble"></i>
+            Original Sample
+        </a>
+    </span>
+    <span class="right">
+        <a href="https://github.com/chadingTV/dribbble-todo" target="_blank">
+            <i class="fab fa-github"></i>
+            Source code
+        </a>
+    </span>
+</div>
+<div class="preview-img">
+    <p>iPhone X - Todo Concept</p>
+    <p>by <a href="https://dribbble.com/johnjbrown" target=_blank>Jae-seong, Jeong</a> in UI & Interaction Design</p>
+    <img src="" id="sampleimg"/>
+</div>
+
+</body>
+</html>

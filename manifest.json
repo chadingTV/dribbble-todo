@@ -1,0 +1,20 @@
+{
+  "name": "TODOLIST",
+  "short_name": "TODO",
+  "icons": [{
+        "src": "./img/touch-icon.png",
+        "type": "image/png",
+        "sizes": "180x180"
+    },
+    {
+        "src": "./img/apple-launch-1242x2688.png",
+        "type": "image/png",
+        "sizes": "1125x2436"
+    }
+  ],
+  "scope": "/sample/todo/",
+  "start_url": "/sample/todo",
+  "display": "fullscreen",
+  "background_color": "#f9a754",
+  "orientation": "portrait"
+}
