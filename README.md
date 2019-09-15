@@ -6,7 +6,7 @@ Dribbble Awesome Design Concept implement with PWA (Progress Web App)
 ### sample original URL
 <a href="https://dribbble.com/shots/3812962-iPhone-X-Todo-Concept" target="_blank">https://dribbble.com/shots/3812962-iPhone-X-Todo-Concept</a>
 
-![original sample](https://cdn.dribbble.com/users/1200964/screenshots/3812962/todo_concept_iphonex_30fps.gif)
+![original sample](https://chadingtv.github.io/dribbble-todo/img/original-sample.png)
 
 
 by **Jae-seong, Jeong** in **dribbble.com**
