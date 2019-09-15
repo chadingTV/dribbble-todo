@@ -1,7 +1,7 @@
 # Dribbble Awesome Design Concept implement and PWA
 Dribbble Awesome Design Concept implement with PWA (Progress Web App)
 
-** html,css,javascript **
+**html,css,javascript**
 
 ### sample original URL
 <a href="https://dribbble.com/shots/3812962-iPhone-X-Todo-Concept" target="_blank">https://dribbble.com/shots/3812962-iPhone-X-Todo-Concept</a>
@@ -11,9 +11,9 @@ by **Jae-seong, Jeong** in **dribbble.com**
 <br/>
 
 ### html preview URL
-https://chadingtv.github.io/sample/todo/
+https://chadingtv.github.io/dribbble-todo/
 or
-https://chading.net/dribbble-todo/
+https://chading.net/sample/todo/
 
 
 ![screen shot](https://chadingtv.github.io/dribbble-todo/img/screenshot.png)
@@ -23,9 +23,13 @@ https://chading.net/dribbble-todo/
 mobile PWA install
 ** iOS by safari **
 ** Android by chrome ** 
+<br/>
+
 ![pwa install](https://chadingtv.github.io/dribbble-todo/img/sample-pwa-install.gif)
 
 PWA launch
+<br/>
+
 ![pwa install](https://chadingtv.github.io/dribbble-todo/img/sample-pwa-launch.gif)
 
 
